@@ -1,0 +1,88 @@
+const u = (id) =>
+  `https://images.unsplash.com/${id}?auto=format&fit=crop&w=2400&q=80`;
+
+export const DESTINATIONS_DATA = {
+  bali: {
+    slug: "bali",
+    name: "Bali, Indonesia",
+    tagline: "Surf, culture and natural beauty",
+    days: 7,
+    level: "Moderate",
+    season: "All Seasons",
+    img: u("photo-1537996194471-e657df975ab4"),
+  },
+  santorini: {
+    slug: "santorini",
+    name: "Santorini, Greece",
+    tagline: "Sunsets, whitewashed villages and caldera views",
+    days: 6,
+    level: "Easy",
+    season: "May – Oct",
+    img: u("photo-1570077188670-e3a8d69ac5ff"),
+  },
+  maldives: {
+    slug: "maldives",
+    name: "Maldives",
+    tagline: "Crystal lagoons, reefs and island hopping",
+    days: 6,
+    level: "Easy",
+    season: "Nov – Apr",
+    img: u("photo-1514282401047-d79a71a590e8"),
+  },
+  kyoto: {
+    slug: "kyoto",
+    name: "Kyoto, Japan",
+    tagline: "Temples, tea houses and timeless tradition",
+    days: 8,
+    level: "Easy",
+    season: "Spring & Autumn",
+    img: u("photo-1493976040374-85c6e86f149e"),
+  },
+  "swiss-alps": {
+    slug: "swiss-alps",
+    name: "Swiss Alps",
+    tagline: "Peaks, glacial lakes and alpine trails",
+    days: 9,
+    level: "Challenging",
+    season: "Jun – Sep",
+    img: u("photo-1531366936337-7c912a4589a7"),
+  },
+  "costa-rica": {
+    slug: "costa-rica",
+    name: "Costa Rica",
+    tagline: "Rainforest trails, wildlife and wild coastline",
+    days: 8,
+    level: "Moderate",
+    season: "Dec – Apr",
+    img: u("photo-1518259102261-b40117eabbfc"),
+  },
+  portugal: {
+    slug: "portugal",
+    name: "Portugal",
+    tagline: "Atlantic surf, coastal towns and golden sunsets",
+    days: 6,
+    level: "Easy",
+    season: "Apr – Oct",
+    img: u("photo-1502680390469-be75c86b636f"),
+  },
+  thailand: {
+    slug: "thailand",
+    name: "Thailand",
+    tagline: "Island hopping, street food and living culture",
+    days: 7,
+    level: "Easy",
+    season: "Nov – Apr",
+    img: u("photo-1528181304800-259b08848526"),
+  },
+  peru: {
+    slug: "peru",
+    name: "Peru",
+    tagline: "Ancient ruins and high Andean trails",
+    days: 10,
+    level: "Challenging",
+    season: "May – Sep",
+    img: u("photo-1526392060635-9d6019884377"),
+  },
+};
+
+export const getDestination = (slug) => DESTINATIONS_DATA[slug] || null;
